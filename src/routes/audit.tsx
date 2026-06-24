@@ -35,7 +35,7 @@ function AuditPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
-    const data = Object.fromEntries(fd.entries());
+    const data = Object.fromEntries(fd.entries()) as Record<string, string>;
     const result = schema.safeParse(data);
     if (!result.success) {
       const fieldErrs: Record<string, string> = {};
@@ -47,7 +47,12 @@ function AuditPage() {
     }
     setErrors({});
     setSubmitting(true);
-    setTimeout(() => navigate({ to: "/thank-you" }), 400);
+    const subject = encodeURIComponent(`[Free Audit Request] ${data.bookTitle} — ${data.authorName}`);
+    const body = encodeURIComponent(
+      `Full Name: ${data.fullName}\nEmail: ${data.email}\nAuthor Name: ${data.authorName}\nBook Title: ${data.bookTitle}\nAmazon Link: ${data.amazonLink}\nGenre: ${data.genre}\nCurrent Challenge: ${data.challenge}\n\nPlease send my free Book Visibility Audit. Thank you.`,
+    );
+    window.location.href = `mailto:alexauthorgrowthhub@gmail.com?subject=${subject}&body=${body}`;
+    setTimeout(() => navigate({ to: "/thank-you" }), 600);
   };
 
   return (

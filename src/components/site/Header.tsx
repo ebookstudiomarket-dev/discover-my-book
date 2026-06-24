@@ -5,6 +5,7 @@ import { Menu, X, BookOpen } from "lucide-react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
+  { to: "/portfolio", label: "Portfolio" },
   { to: "/audit", label: "Free Audit" },
   { to: "/about", label: "About" },
   { to: "/testimonials", label: "Testimonials" },

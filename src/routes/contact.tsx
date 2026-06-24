@@ -39,7 +39,7 @@ function ContactPage() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
-    const data = Object.fromEntries(fd.entries());
+    const data = Object.fromEntries(fd.entries()) as Record<string, string>;
     const res = schema.safeParse(data);
     if (!res.success) {
       const errs: Record<string, string> = {};
@@ -48,6 +48,11 @@ function ContactPage() {
       return;
     }
     setErrors({});
+    const subject = encodeURIComponent(`[Website Contact] ${data.subject}`);
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`,
+    );
+    window.location.href = `mailto:alexauthorgrowthhub@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
     (e.target as HTMLFormElement).reset();
   };
@@ -84,7 +89,7 @@ function ContactPage() {
           </form>
 
           <aside className="space-y-6">
-            <InfoCard icon={Mail} label="Business Email" value="hello@alexmorgan.studio" />
+            <InfoCard icon={Mail} label="Business Email" value="alexauthorgrowthhub@gmail.com" href="mailto:alexauthorgrowthhub@gmail.com" />
             <InfoCard icon={Clock} label="Response Time" value="Within 24 hours, Mon–Fri" />
             <div className="rounded-2xl border border-border bg-card p-7" style={{ boxShadow: "var(--shadow-card)" }}>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Follow</p>
@@ -133,16 +138,18 @@ function Field({ name, label, type = "text", error }: { name: string; label: str
   );
 }
 
-function InfoCard({ icon: Icon, label, value }: { icon: React.ComponentType<{ className?: string }>; label: string; value: string }) {
+function InfoCard({ icon: Icon, label, value, href }: { icon: React.ComponentType<{ className?: string }>; label: string; value: string; href?: string }) {
+  const Wrap: React.ElementType = href ? "a" : "div";
+  const wrapProps = href ? { href } : {};
   return (
-    <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6" style={{ boxShadow: "var(--shadow-card)" }}>
+    <Wrap {...wrapProps} className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-gold/50" style={{ boxShadow: "var(--shadow-card)" }}>
       <span className="grid h-11 w-11 place-items-center rounded-lg bg-navy-gradient text-gold ring-1 ring-gold/30">
         <Icon className="h-5 w-5" />
       </span>
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">{label}</p>
-        <p className="mt-1 text-base font-medium text-foreground">{value}</p>
+        <p className="mt-1 text-base font-medium text-foreground break-all">{value}</p>
       </div>
-    </div>
+    </Wrap>
   );
 }
