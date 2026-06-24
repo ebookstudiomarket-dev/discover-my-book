@@ -36,6 +36,7 @@ export function Footer() {
             {[
               ["/", "Home"],
               ["/services", "Services"],
+              ["/portfolio", "Portfolio"],
               ["/audit", "Free Audit"],
               ["/about", "About"],
               ["/testimonials", "Testimonials"],
@@ -51,7 +52,11 @@ export function Footer() {
         <div>
           <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold">Contact</h4>
           <ul className="mt-4 space-y-2.5 text-sm text-white/75">
-            <li>hello@alexmorgan.studio</li>
+            <li>
+              <a href="mailto:alexauthorgrowthhub@gmail.com" className="hover:text-gold break-all">
+                alexauthorgrowthhub@gmail.com
+              </a>
+            </li>
             <li>Response within 24 hours</li>
             <li>Mon–Fri, 9–6 EST</li>
           </ul>
