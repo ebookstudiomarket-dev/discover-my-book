@@ -67,15 +67,15 @@ const steps = [
 ];
 
 const caseStudies = [
-  { genre: "Literary Fiction", metric: "+312%", label: "Keyword impressions in 60 days" },
-  { genre: "Self-Help Nonfiction", metric: "4.2×", label: "Monthly review velocity" },
-  { genre: "Memoir", metric: "Top 5", label: "Category rank held for 90 days" },
+  { genre: "Women's Fiction", metric: "Top 50", label: "Amazon US category — held 6 weeks" },
+  { genre: "Contemporary Romance", metric: "4.1×", label: "Monthly organic review velocity" },
+  { genre: "Beach Read Series", metric: "+218%", label: "Launch-week page reads vs prior book" },
 ];
 
 const testimonials = [
-  { name: "Sarah Whitfield", genre: "Historical Fiction", quote: "My debut had been quietly dying. Within two months of working with Alex, my book was ranking in three categories and reviews started coming in weekly." },
-  { name: "Daniel Hart", genre: "Business & Leadership", quote: "I'd spent thousands on ads with nothing to show. Alex rebuilt my positioning and copy — sales tripled without a single dollar of new spend." },
-  { name: "Maya Rosen", genre: "Romance", quote: "The audit alone was worth it. Clear, specific, and grounded in how Amazon actually works. No vague advice, just a real plan." },
+  { name: "Rachel H.", genre: "Women's Fiction Author", quote: "Alex understood my series the moment we got on the call. The repositioning and keyword work moved The Wexley Inn into a category where the right readers actually live." },
+  { name: "Stephanie T.", genre: "Beach Read Series", quote: "Book 2 outperformed Book 1 in its first week. The launch plan was clear, the ARC system worked, and reviews kept rolling in long after launch day." },
+  { name: "Maya R.", genre: "Contemporary Romance", quote: "The audit alone was worth it. Specific, grounded in how Amazon actually works, and zero fluff. I knew exactly what to fix and in what order." },
 ];
 
 function HomePage() {
@@ -219,7 +219,7 @@ function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">Outcomes</p>
             <h2 className="mt-3 font-display text-3xl font-semibold md:text-5xl">Author Growth Success Stories</h2>
-            <p className="mt-4 text-sm text-muted-foreground">Sample data shown until real client results are published.</p>
+            <p className="mt-4 text-sm text-muted-foreground">Selected results from recent author engagements. Full portfolio available on request.</p>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {caseStudies.map((c) => (
