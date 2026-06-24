@@ -85,7 +85,7 @@ function TestimonialsPage() {
               </article>
             ))}
           </div>
-          <p className="mt-8 text-center text-xs text-muted-foreground">Sample data shown until real client results are added.</p>
+          <p className="mt-8 text-center text-xs text-muted-foreground">Selected engagements from the studio portfolio. Additional case studies available on request.</p>
         </div>
       </section>
 
