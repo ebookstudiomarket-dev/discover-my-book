@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { BookOpen, Mail, Twitter, Linkedin, Instagram } from "lucide-react";
+import { BookOpen, Mail, Music2 } from "lucide-react";
 
 export function Footer() {
   return (
@@ -17,12 +17,17 @@ export function Footer() {
             reviewed, and ranked titles.
           </p>
           <div className="mt-6 flex gap-3">
-            {[Twitter, Linkedin, Instagram, Mail].map((Icon, i) => (
+            {[
+              { Icon: Music2, href: "https://www.tiktok.com/@authorgrowth4", label: "TikTok" },
+              { Icon: Mail, href: "mailto:alexauthorgrowthhub@gmail.com", label: "Email" },
+            ].map(({ Icon, href, label }) => (
               <a
-                key={i}
-                href="#"
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="grid h-9 w-9 place-items-center rounded-md border border-white/15 text-white/70 transition-colors hover:border-gold/50 hover:text-gold"
-                aria-label="Social link"
+                aria-label={label}
               >
                 <Icon className="h-4 w-4" />
               </a>
