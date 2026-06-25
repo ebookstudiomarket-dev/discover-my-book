@@ -53,7 +53,7 @@ function ServicesPage() {
                     Start with a free audit <ArrowRight className="h-4 w-4" />
                   </Link>
                   <Link to="/contact" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 text-sm font-semibold text-foreground hover:bg-secondary">
-                    Talk to Alex
+                    Talk to the Studio
                   </Link>
                 </div>
               </div>

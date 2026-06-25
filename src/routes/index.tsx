@@ -73,7 +73,7 @@ const caseStudies = [
 ];
 
 const testimonials = [
-  { name: "Rachel H.", genre: "Women's Fiction Author", quote: "Alex understood my series the moment we got on the call. The repositioning and keyword work moved The Wexley Inn into a category where the right readers actually live." },
+  { name: "Rachel H.", genre: "Women's Fiction Author", quote: "The team understood my series the moment we got on the call. The repositioning and keyword work moved The Wexley Inn into a category where the right readers actually live." },
   { name: "Stephanie T.", genre: "Beach Read Series", quote: "Book 2 outperformed Book 1 in its first week. The launch plan was clear, the ARC system worked, and reviews kept rolling in long after launch day." },
   { name: "Maya R.", genre: "Contemporary Romance", quote: "The audit alone was worth it. Specific, grounded in how Amazon actually works, and zero fluff. I knew exactly what to fix and in what order." },
 ];
