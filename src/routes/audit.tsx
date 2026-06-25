@@ -7,9 +7,9 @@ import { SiteShell } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "Free Book Visibility Audit | Alex Morgan" },
+      { title: "Free Book Visibility Audit" },
       { name: "description", content: "Discover why your book isn't reaching more readers. Get a personalized visibility audit covering positioning, keywords, and review health." },
-      { property: "og:title", content: "Free Book Visibility Audit — Alex Morgan" },
+      { property: "og:title", content: "Free Book Visibility Audit" },
       { property: "og:url", content: "/audit" },
     ],
     links: [{ rel: "canonical", href: "/audit" }],

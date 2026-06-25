@@ -10,7 +10,7 @@ export function Footer() {
             <span className="grid h-9 w-9 place-items-center rounded-md bg-white/5 text-gold ring-1 ring-gold/30">
               <BookOpen className="h-4.5 w-4.5" />
             </span>
-            <span className="font-display text-lg font-semibold">Alex Morgan</span>
+            <span className="font-display text-lg font-semibold">Book Growth Studio</span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-white/70">
             A book growth studio helping authors turn invisible books into discoverable,
@@ -65,7 +65,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-narrow flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/55 md:flex-row">
-          <p>© {new Date().getFullYear()} Alex Morgan Book Growth Studio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Book Growth Studio. All rights reserved.</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-gold">Privacy Policy</a>
             <a href="#" className="hover:text-gold">Terms of Service</a>

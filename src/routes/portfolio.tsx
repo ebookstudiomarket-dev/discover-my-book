@@ -15,9 +15,9 @@ import famous from "@/assets/books/Famous_in_a_Small_Town.jpg.asset.json";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Author & Book Campaigns | Alex Morgan" },
-      { name: "description", content: "Selected book growth campaigns Alex Morgan has supported across women's fiction, contemporary romance, and bestselling author brands." },
-      { property: "og:title", content: "Portfolio — Alex Morgan Book Growth Studio" },
+      { title: "Portfolio — Author & Book Campaigns" },
+      { name: "description", content: "Selected book growth campaigns Book Growth Studio has supported across women's fiction, contemporary romance, and bestselling author brands." },
+      { property: "og:title", content: "Portfolio — Book Growth Studio" },
       { property: "og:url", content: "/portfolio" },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],

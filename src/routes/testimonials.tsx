@@ -5,9 +5,9 @@ import { SiteShell, PageHero } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Author Testimonials & Success Stories | Alex Morgan" },
-      { name: "description", content: "Read what authors of fiction, nonfiction, and memoir say about working with Alex Morgan to grow their book's visibility." },
-      { property: "og:title", content: "Testimonials — Alex Morgan" },
+      { title: "Author Testimonials & Success Stories" },
+      { name: "description", content: "Read what authors of fiction, nonfiction, and memoir say about working with our studio to grow their book's visibility." },
+      { property: "og:title", content: "Testimonials" },
       { property: "og:url", content: "/testimonials" },
     ],
     links: [{ rel: "canonical", href: "/testimonials" }],

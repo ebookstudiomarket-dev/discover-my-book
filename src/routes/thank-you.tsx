@@ -5,7 +5,7 @@ import { SiteShell } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/thank-you")({
   head: () => ({
     meta: [
-      { title: "Thank You — Audit Request Received | Alex Morgan" },
+      { title: "Thank You — Audit Request Received" },
       { name: "robots", content: "noindex" },
     ],
   }),
