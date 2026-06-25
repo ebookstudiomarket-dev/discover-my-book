@@ -20,13 +20,13 @@ import heroBook from "@/assets/hero-book.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Morgan — Turn Invisible Books Into Discoverable Titles" },
+      { title: "Book Growth Studio — Turn Invisible Books Into Discoverable Titles" },
       {
         name: "description",
         content:
           "Premium book marketing and author growth consultancy. Improve Amazon visibility, keyword ranking, reviews, and reader discoverability.",
       },
-      { property: "og:title", content: "Alex Morgan — Book Growth Studio" },
+      { property: "og:title", content: "Book Growth Studio — Book Growth Studio" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -73,7 +73,7 @@ const caseStudies = [
 ];
 
 const testimonials = [
-  { name: "Rachel H.", genre: "Women's Fiction Author", quote: "Alex understood my series the moment we got on the call. The repositioning and keyword work moved The Wexley Inn into a category where the right readers actually live." },
+  { name: "Rachel H.", genre: "Women's Fiction Author", quote: "The team understood my series the moment we got on the call. The repositioning and keyword work moved The Wexley Inn into a category where the right readers actually live." },
   { name: "Stephanie T.", genre: "Beach Read Series", quote: "Book 2 outperformed Book 1 in its first week. The launch plan was clear, the ARC system worked, and reviews kept rolling in long after launch day." },
   { name: "Maya R.", genre: "Contemporary Romance", quote: "The audit alone was worth it. Specific, grounded in how Amazon actually works, and zero fluff. I knew exactly what to fix and in what order." },
 ];
@@ -92,7 +92,7 @@ function HomePage() {
               <span className="text-gradient-gold">Discoverable, Reviewed, and Ranked</span> Title.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
-              Publishing your book is only the beginning. Alex Morgan helps authors improve
+              Publishing your book is only the beginning. Our studio helps authors improve
               discoverability, visibility, reader engagement, and review momentum through proven
               book growth systems.
             </p>
@@ -145,7 +145,7 @@ function HomePage() {
         <div className="container-narrow">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">The Approach</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold md:text-5xl">How Alex Morgan Helps Authors Grow</h2>
+            <h2 className="mt-3 font-display text-3xl font-semibold md:text-5xl">How We Help Authors Grow</h2>
             <div className="mx-auto mt-5 gold-divider" />
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-5">

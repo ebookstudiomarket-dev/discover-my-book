@@ -7,9 +7,9 @@ import { SiteShell, PageHero } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Alex Morgan | Book Growth Studio" },
-      { name: "description", content: "Get in touch with Alex Morgan to discuss your book's growth strategy. Response within 24 hours." },
-      { property: "og:title", content: "Contact — Alex Morgan" },
+      { title: "Contact Us | Book Growth Studio" },
+      { name: "description", content: "get in touch with our studio to discuss your book's growth strategy. Response within 24 hours." },
+      { property: "og:title", content: "Contact" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],

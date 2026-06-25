@@ -5,9 +5,9 @@ import { SiteShell, PageHero } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Author Testimonials & Success Stories | Alex Morgan" },
-      { name: "description", content: "Read what authors of fiction, nonfiction, and memoir say about working with Alex Morgan to grow their book's visibility." },
-      { property: "og:title", content: "Testimonials — Alex Morgan" },
+      { title: "Author Testimonials & Success Stories" },
+      { name: "description", content: "Read what authors of fiction, nonfiction, and memoir say about working with our studio to grow their book's visibility." },
+      { property: "og:title", content: "Testimonials" },
       { property: "og:url", content: "/testimonials" },
     ],
     links: [{ rel: "canonical", href: "/testimonials" }],
@@ -16,18 +16,18 @@ export const Route = createFileRoute("/testimonials")({
 });
 
 const testimonials = [
-  { name: "Rachel H.", genre: "Women's Fiction · The Wexley Inn", quote: "Alex understood my series the moment we got on the call. The repositioning and keyword work moved the title into a category where the right readers actually live — and read-through across the series finally clicked." },
+  { name: "Rachel H.", genre: "Women's Fiction · The Wexley Inn", quote: "The team understood my series the moment we got on the call. The repositioning and keyword work moved the title into a category where the right readers actually live — and read-through across the series finally clicked." },
   { name: "Stephanie T.", genre: "Beach Reads · Shipwreck Key Series", quote: "Book 2 outperformed Book 1 in its first week. The launch plan was clear, the ARC system actually worked, and reviews kept rolling in long after launch day." },
   { name: "Debbie M.", genre: "Contemporary Romance", quote: "I'd been launching books for years and still learned something on every call. The keyword stack alone breathed life back into a backlist title I'd nearly given up on." },
   { name: "RaeAnne T.", genre: "Upmarket Women's Fiction", quote: "The description rewrite changed everything. Same book, same cover, completely different conversion — readers finally understood what they were about to fall in love with." },
-  { name: "Wendy W.", genre: "Beach Read Series", quote: "Series read-through is the hardest needle to move and Alex moved it. The back-matter and funnel changes paid for the engagement in the first month." },
+  { name: "Wendy W.", genre: "Beach Read Series", quote: "Series read-through is the hardest needle to move and the team moved it. The back-matter and funnel changes paid for the engagement in the first month." },
   { name: "Brenda N.", genre: "Travel Romance", quote: "The pre-order runway was tight, organized, and calm — exactly what I needed at that stage. We hit launch week with real momentum, not panic." },
-  { name: "Viola S.", genre: "Women's Fiction", quote: "Alex pitched the author-side story behind my book in a way I never could have on my own. The editorial features kept coming for months." },
+  { name: "Viola S.", genre: "Women's Fiction", quote: "The team pitched the author-side story behind my book in a way I never could have on my own. The editorial features kept coming for months." },
   { name: "Maya R.", genre: "Contemporary Romance", quote: "The audit alone was worth it. Specific, grounded in how Amazon actually works, and zero fluff. I knew exactly what to fix and in what order." },
-  { name: "Daniel H.", genre: "Business & Leadership", quote: "I'd spent thousands on ads with nothing to show. Alex rebuilt my positioning and copy — sales tripled without a single dollar of new spend." },
+  { name: "Daniel H.", genre: "Business & Leadership", quote: "I'd spent thousands on ads with nothing to show. The team rebuilt my positioning and copy — sales tripled without a single dollar of new spend." },
   { name: "James O.", genre: "Memoir", quote: "I felt invisible. Now I have a system that's bringing in honest reviews every single week. It's changed how I think about being an author." },
   { name: "Priya A.", genre: "Self-Help", quote: "The keyword research alone moved my book into the top 20 in two categories I didn't even know existed." },
-  { name: "Marcus L.", genre: "Thriller", quote: "Alex doesn't sell hype. She sells a plan. That's exactly what I needed after two failed launches." },
+  { name: "Marcus L.", genre: "Thriller", quote: "The studio doesn't sell hype — it sells a plan. That's exactly what I needed after two failed launches." },
 ];
 
 const stories = [
@@ -41,7 +41,7 @@ function TestimonialsPage() {
     <SiteShell>
       <PageHero
         eyebrow="Author Voices"
-        title={<>What Authors Say About <span className="text-gradient-gold">Working With Alex</span></>}
+        title={<>What Authors Say About <span className="text-gradient-gold">the Studio</span></>}
         subtitle="Sample feedback shown below — full client case studies are published as engagements complete."
       />
 

@@ -38,7 +38,7 @@ export function Header() {
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-lg font-semibold tracking-tight text-foreground">
-              Alex Morgan
+              Book Growth Studio
             </span>
             <span className="mt-0.5 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               Book Growth Studio
